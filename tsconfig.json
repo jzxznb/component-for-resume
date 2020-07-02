@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "charset": "utf-8",
+        "sourceMap": false,
+        "target": "es5",
+        "module": "es6",
+        "strict": true,
+        "allowJs": true,
+        "moduleResolution": "node",
+        "jsx": "react",
+        "noImplicitAny": false,
+        "allowSyntheticDefaultImports": true,
+        "lib": ["es6", "es7", "dom"],
+        "baseUrl": ".",
+        "paths": {
+            "@components/*": ["components/*"]
+        }
+    },
+    "include": ["./components/**/*", "./local"],
+    "exclude": ["node_modules"]
+}
