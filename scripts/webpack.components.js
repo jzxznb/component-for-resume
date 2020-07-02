@@ -15,6 +15,7 @@ module.exports = merge(commonPack, {
     output: {
         path: path.resolve(__dirname, '../plugins'),
         filename: '[name].js',
+        library: '[name]',
         libraryTarget: 'umd',
         globalObject: 'this',
     },
