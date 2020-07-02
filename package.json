@@ -6,7 +6,8 @@
   "scripts": {
     "build": "rimraf plugins && MODE=production webpack --config scripts/webpack.components.js",
     "build:dev": "MODE=development webpack --config scripts/webpack.html.js",
-    "serve": "MODE=development webpack-dev-server --config scripts/webpack.html.js"
+    "serve": "MODE=development webpack-dev-server --config scripts/webpack.html.js",
+    "publish": "chmod 777 scripts/deploy.sh && scripts/deploy.sh" 
   },
   "repository": {
     "type": "git",
