@@ -15,7 +15,7 @@ module.exports = merge(commonPack, {
     output: {
         path: path.resolve(__dirname, '../plugins'),
         filename: '[name].js',
-        library: '[name]',
+        library: '[name]', // 挂在在window上
         libraryTarget: 'umd',
         globalObject: 'this',
     },
